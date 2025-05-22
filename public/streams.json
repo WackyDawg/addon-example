@@ -1,0 +1,15 @@
+[
+    {
+      "slug": "pluto-tv-sitcom",
+      "name": "Nicktoons",
+      "hls": "https://fl1.moveonjoy.com/NICKTOONS/index.m3u8",
+      "imageUrl": "https://api-streamio-production.up.railway.app/channel/68277f552d843a9cb86663f4/Untitled design.png"
+    },
+    {
+      "slug": "pluto-tv-crime",
+      "name": "Crime TV",
+      "hls": "https://fl1.moveonjoy.com/CRIMETV/index.m3u8",
+      "imageUrl": "https://api-streamio-production.up.railway.app/channel/68277f552d843a9cb86663f4/crime.png"
+    }
+  ]
+  
