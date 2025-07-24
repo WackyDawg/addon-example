@@ -4,7 +4,7 @@
     "name": "Addon example",
     "description": "An example addon for Streamio",
     "resources": ["stream"],
-    "types": ["tv"],
+    "types": ["Tv"],
     "idPrefixes": ["tt"],
     "entryPoints": {
         "tv": {

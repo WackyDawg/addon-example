@@ -6,7 +6,7 @@ import { updateCategoryWithChannels } from './utils/categoryUpdater.utils.js';
 import 'dotenv/config';
 
 const app = express();
-const port = 3000;
+const port = 7860;
 const __dirname = path.resolve();
 
 app.use(bodyParser.json());
