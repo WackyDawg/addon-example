@@ -30,12 +30,14 @@ export async function handleStream(type) {
         name: channel.name,
         hash: "#Comedy",
         number: 100,
+        category: `${id}`,
         summary: `Watch ${channel.name}`,
         rating: "PG",
         plutoOfficeOnly: false,
         featured: false,
         featuredOrder: -1,
         isStitched: true,
+        "image": "https://banner2.cleanpng.com/20180616/uwj/aa6ixngxy.webp",
         stitched: {
           paths: [
             {
@@ -44,8 +46,6 @@ export async function handleStream(type) {
             },
           ],
         },
-        images: imageMeta ? [imageMeta] : [],
-        categoryIDs: categoryIds,
         tmsid: null,
       });
     }
