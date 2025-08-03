@@ -25,11 +25,9 @@ export async function handleStream(type) {
       const imageMeta = await validateImageDimensions(channel.imageUrl);
 
       streams.push({
-        id,
+        id: channel.id,
         slug: channel.slug,
         name: channel.name,
-        hash: "#Comedy",
-        number: 100,
         category: `${id}`,
         summary: `Watch ${channel.name}`,
         rating: "PG",
@@ -37,7 +35,7 @@ export async function handleStream(type) {
         featured: false,
         featuredOrder: -1,
         isStitched: true,
-        "image": "https://banner2.cleanpng.com/20180616/uwj/aa6ixngxy.webp",
+        image: channel.imageUrl,
         stitched: {
           paths: [
             {
