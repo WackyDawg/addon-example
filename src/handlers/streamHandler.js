@@ -28,7 +28,7 @@ export async function handleStream(type) {
         id: channel.id,
         slug: channel.slug,
         name: channel.name,
-        category: `${id}`,
+        category: channel.id,
         summary: `Watch ${channel.name}`,
         rating: "PG",
         plutoOfficeOnly: false,
