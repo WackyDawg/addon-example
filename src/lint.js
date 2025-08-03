@@ -2,17 +2,14 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from 'url';
 
-// ES Module-compatible __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// === SETTINGS ===
 const m3uFile = path.join(__dirname, 'channels.m3u');
 const outputJsonFile = path.join(__dirname, 'channels.json');
 const fixedId = "13"; 
 let autoId = 1;
 
-// === HELPERS ===
 function slugify(text) {
   return text
     .toString()
@@ -50,7 +47,6 @@ function parseM3U(content) {
   return output;
 }
 
-// === MAIN ===
 async function main() {
   try {
     const data = await fs.promises.readFile(m3uFile, 'utf-8');
