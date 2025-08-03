@@ -22,7 +22,7 @@ export async function handleStream(type) {
 
     for (const channel of rawChannels) {
       const id = "1";
-      const imageMeta = await validateImageDimensions(channel.imageUrl);
+      // const imageMeta = await validateImageDimensions(channel.imageUrl);
 
       streams.push({
         id: channel.id,
